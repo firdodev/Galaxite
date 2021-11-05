@@ -1,0 +1,22 @@
+Name of website:Gallaga
+
+
+primaty color: purpleaccent  
+accent color: black midis grey
+
+colors:
+    #f37bff
+    #ee49ff
+    #f7b0ff
+    #772480
+    #7b5880
+
+databaze: firebase
+
+Punet:
+    Firdeusi:
+        databaze
+        login create account
+        chat system
+    Igli:
+        front-end
