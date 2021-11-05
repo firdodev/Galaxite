@@ -1,0 +1,14 @@
+git add . -> vendos por nuk ben commit
+git commit -m "mesazh"
+git push
+
+Mos Harro:
+    Gjithmon perdor git pull para se te fillosh te perdoresh ose te 
+    punosh ne projekt
+
+
+hapat:
+    1.git pull -> per te pare ne qoftese ka ndodh ndonje ndryshim
+    2.git add .
+    3.git commit -m "mesazh"
+    3.git push
