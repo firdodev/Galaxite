@@ -1,0 +1,64 @@
+*{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.search-box{
+    width: 150px;
+    height: 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.25s;
+    background: transparent;
+}
+
+.search-box:focus{
+    width: 400px;
+}
+
+.nav-top-bar{
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.profile-img{
+    width: 150px;
+    margin-top: -200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#menu-btn{
+    width: 100px;
+    display: inline-block;
+    margin: 2px;
+}
+
+#friends-img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    float: left;
+    margin: 9px;
+}
+
+#friend-bar{
+    background-color: rgba(226, 225, 225, 0.384);
+    min-height: 400px;
+    margin-top: 20px;
+    color: rgb(54, 54, 54);
+    padding: 8px;
+    border-radius: 15px;
+}
+
+
+#friends{
+    
+    clear: both;
+    font-size: 13px;
+    font-weight: bold;
+
+}
