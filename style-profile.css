@@ -62,3 +62,38 @@
     font-weight: bold;
 
 }
+
+textarea{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: rgb(221, 219, 219);
+    height: 50px;
+}
+
+#post_btn{
+    float:right;
+    background-color: rgb(163, 66, 253);
+    border: none;
+    color: white;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 50px;
+}
+
+#posts_bar{
+    margin-top: 20px;
+    background-color: rgba(226, 225, 225, 0.384);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#posts{
+    padding: 4px;
+    font-size: 13px;
+    display: flex;
+    margin-bottom: 20px;
+}
