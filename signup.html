@@ -4,31 +4,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-login-create.css">
     <title>Galaxite</title>
+    <script src="signup.js"></script>
 </head>
 <body>
     
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-        <div id="title" style="top: 20%;">
-            <span>Galaxite</span>
-            <br>
-            <span>Signup</span>
-        </div>
         <div class="login-container" >
+            <div id="title" style="top: 20%;">
+                <span>Galaxite</span>
+                <br>
+                <span>Signup</span>
+            </div>
             <center>
                 <form name="Form">
-                    <input type="text" placeholder="First Name" class="email" name="first-name">
-                    <input type="text" placeholder="Last Name" class="email" name="last-name">
+                    <input type="text" placeholder="First Name" class="email" name="first-name" id="first-name">
+                    <input type="text" placeholder="Last Name" class="email" name="last-name" id="last-name">
                     <p>Gender:</p>
                     <select class="gender-select">
                         <option>Male</option>
                         <option>Female</option>
                     </select>
-                    <input type="email" placeholder="Email" class="email" name="email">
-                    <input type="password" placeholder="Password" class="password" name="password">
-                    <input type="password" placeholder="Re-Password" class="password" name="re-password">
-                    <input type="button" value="Create Account" class="login" onclick="validateForm()">
+                    <input type="email" placeholder="Email" class="email" name="email" id="email">
+                    <input type="password" placeholder="Password" class="password" name="password" id="password">
+                    <input type="password" placeholder="Re-Password" class="password" name="re-password" id="re-password">
+                    <p style="color: red;" id="error-msg"></p>
+                    <input type="button" value="Create Account" class="login" onclick="checksignup()">
                 </form>
                 <a href="login.html" style="text-decoration: none;"><button class="create-acc">Login Account</button></a>
             </center>
