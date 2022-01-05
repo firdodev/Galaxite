@@ -34,12 +34,21 @@ Brenda body:
     100%{background-position:0% 50%}
 } */
 
+#video-bg-f{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
 .video-bg{
     position: fixed;
-    top: 0;
-    left: 0px;
-    height: 100%;
-    filter: brightness(70%) saturate(220%) grayscale(20% 20%);
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }
 
 
