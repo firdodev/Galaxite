@@ -34,6 +34,24 @@ Brenda body:
     100%{background-position:0% 50%}
 } */
 
+.logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.logo-full{
+    top: 0;
+    text-align: center;
+    width: max-content;
+    display: inline-block;
+}
+
+.alaxite-logo-name{
+    float: right;
+    margin-top: 45px;
+}
+
 #video-bg-f{
     position: fixed;
     right: 0;
