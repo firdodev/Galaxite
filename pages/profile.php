@@ -1,41 +1,79 @@
+<?php
+
+    session_start();
+    print_r($_SESSION);
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galaxite-timeline</title>
-    <link rel="stylesheet" href="style-timeline.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Galaxite-profile</title>
+    <link rel="stylesheet" href="../assets/css/style-profile.css">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
 </head>
-<!-- ==== Body ==== -->
 <body style="background-color: rgba(250, 250, 250, 0.815);">
     <!--Top Bar-->
     
     <div class="nav-top-bar">
         <div style="width: 800px; margin: auto; font-size: 30px;">
-            <a href="timeline.html" style="text-decoration: none;">
-                <img src="img/logo.png" style="width: 50px; height: 50px;">
+            <a href="timeline.php" style="text-decoration: none;">
+                <img src="../assets/img/logo.png" style="width: 50px; height: 50px;">
             </a>
             alaxite
             <input type="text" class="search-box" placeholder="Search people">
-            <a href="profile.html" class="profile-logo">
-                <img src="img/selfie-test.jpg" style="width: 50px; float: right; border-radius: 50px;">
+            <a href="profile.php" class="profile-logo">
+                <img src="../assets/img/selfie-test.jpg" style="width: 50px; float: right; border-radius: 50px;">
             </a>
-            
         </div>
     </div>
 
     <!--Cover Area-->
 
     <div style="width: 800px; margin: auto;  min-height: 400px;">
+        <div style="background-color: rgba(250, 250, 250, 0.815); text-align: center;">
+            <img src="../assets/img/cover-img-test.jpg" style="width: 100%; border-radius: 10px;">
+            <img src="../assets/img/selfie-test.jpg" class="profile-img">
+            <br>
+                <div style="font-size: 20px;">Lucy Parker</div>
+            <br>
+            <a id="menu-btn" href="timeline.php">Timeline</a>
+            <div id="menu-btn">About</div>
+            <div id="menu-btn">Friends</div>
+            <div id="menu-btn">Photos</div> 
+            <div id="menu-btn">Settings</div>
+        </div>
+
         <!--Below Cover Area-->
         <div style="display: flex;">
 
             <!--friends area-->
             <div style="min-height: 400px;flex: 1;">
                 <div id="friend-bar">
+
+                    Friends<br>
+
+                    <div id="friends">
+                        <img id="friends-img" src="../assets/img/user1-test.jpg">
+                        <br>
+                        First User
+                    </div>
+                    <div id="friends">
+                        <img id="friends-img" src="../assets/img/user2-test.jpg">
+                        <br>
+                        Second User
+                    </div>
+                    <div id="friends">
+                        <img id="friends-img" src="../assets/img/user3-test.jpg">
+                        <br>
+                        Third User
+                    </div>
                     
-                    <img src="img/selfie-test.jpg" class="profile-img"><br>
-                    Lucy Parker
 
                 </div>
             </div>
@@ -56,7 +94,7 @@
                     <!-- Post 1 -->
                     <div id="posts">
                         <div>
-                            <img src="img/user1-test.jpg" style="width: 40px; height: 40px; border-radius: 50px; margin-right: 4px;">
+                            <img src="../assets/img/user1-test.jpg" style="width: 40px; height: 40px; border-radius: 50px; margin-right: 4px;">
                         </div>
                         <div>
                             <div style="font-weight: bold; color: rgb(54, 54, 54); padding: 7px;">First Guy</div>
@@ -69,7 +107,7 @@
                     <!-- Post 2 -->
                     <div id="posts">
                         <div>
-                            <img src="img/user2-test.jpg" style="width: 40px; height: 40px; border-radius: 50px; margin-right: 4px;">
+                            <img src="../assets/img/user2-test.jpg" style="width: 40px; height: 40px; border-radius: 50px; margin-right: 4px;">
                         </div>
                         <div>
                             <div style="font-weight: bold; color: rgb(54, 54, 54); padding: 7px;">Second Girl</div>
@@ -82,7 +120,7 @@
                     <!-- Post 3 -->
                     <div id="posts">
                         <div>
-                            <img src="img/user3-test.jpg" style="width: 40px; height: 40px; border-radius: 50px; margin-right: 4px;">
+                            <img src="../assets/img/user3-test.jpg" style="width: 40px; height: 40px; border-radius: 50px; margin-right: 4px;">
                         </div>
                         <div>
                             <div style="font-weight: bold; color: rgb(54, 54, 54); padding: 7px;">Third Guy</div>
