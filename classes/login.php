@@ -13,22 +13,33 @@
             $result = $DB->read($query);
 
             if($result){
-
                 $row = $result[0];
-
-
                 if($password == $row['password']){
                     // Create session data
                     $_SESSION['galaxite_userid'] = $row['userid'];
                 }else{
-                    $error .= "Wrong Password or Email <br>";
+                    $this->error .= "Wrong Password or Email <br>";
                 }
             }else{
-                $error .= "No such email was found<br>";
+                $this->error .= "No such email was found<br>";
             }
 
-            return $error;
+            return $this->error;
             
+        }
+
+        public function check_login($id){
+            $query = "select userid from users where userid = '$id' limit 1 ";
+
+            $DB = new Database();
+            $result = $DB->read($query);
+
+            if($result){
+                return true;
+            }
+
+            return false;
+
         }
     }
 

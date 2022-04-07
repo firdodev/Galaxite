@@ -20,7 +20,7 @@
             echo "</div>";
         }else{
 
-            header("Location: pages/profile.php");
+            header("Location: ./pages/profile.php");
             die;
         }
         $email = $_POST['email'];
