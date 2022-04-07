@@ -64,7 +64,11 @@
     <div style="width: 800px; margin: auto;  min-height: 400px;">
         <div style="background-color: rgba(250, 250, 250, 0.815); text-align: center;">
             <img src="../assets/img/cover-img-test.jpg" style="width: 100%; border-radius: 10px;">
-            <img src="../assets/img/selfie-test.jpg" class="profile-img">
+            
+            <a href="change_profile_image.php">
+                <img src="../assets/img/selfie-test.jpg" class="profile-img">
+            </a>
+            
             <br>
                 <div style="font-size: 20px;"><?php echo $user_data['first_name'] . " " . $user_data['last_name'] ?></div>
             <br>
