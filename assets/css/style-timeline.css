@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
-     font-family: 'M PLUS Rounded 1c', sans-serif';
-}
-
+* { font-family: 'Poppins' }
 .search-box{
     width: 150px;
     height: 20px;

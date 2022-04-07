@@ -57,7 +57,9 @@
             <center>
                 <form method="post" name="Form">
                     <input value="<?php echo $email; ?>" type="email" placeholder="Email" class="email" name="email" id="email">
+                    <br>
                     <input value="<?php echo $password; ?>" type="password" placeholder="Password" class="password" name="password" id="password">
+                    <br>
                     <!-- <p style="color: red;" id="error-msg"></p> -->
                     <!-- <button class="login" type="button" onclick="checklogin()">Login</button> -->
                     <input type="submit" class="login" value = "Log in">

@@ -1,3 +1,20 @@
+<?php 
+    session_start();
+
+
+    //INCLUDE OR LIBRARYS
+    include("../classes/connect.php");
+    include("../classes/login.php");
+    include("../classes/user.php");
+    include("../classes/post.php");
+
+
+    $login = new Login();
+    $user_data = $login -> check_login($_SESSION['galaxite_userid']);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,19 +27,8 @@
 <body style="background-color: rgba(250, 250, 250, 0.815);">
     <!--Top Bar-->
     
-    <div class="nav-top-bar">
-        <div style="width: 800px; margin: auto; font-size: 30px;">
-            <a href="timeline.php" style="text-decoration: none;">
-                <img src="../assets/img/logo.png" style="width: 50px; height: 50px;">
-            </a>
-            alaxite
-            <input type="text" class="search-box" placeholder="Search people">
-            <a href="profile.php" class="profile-logo">
-                <img src="../assets/img/selfie-test.jpg" style="width: 50px; float: right; border-radius: 50px;">
-            </a>
-            
-        </div>
-    </div>
+    <?php include("header.php"); ?>
+
 
     <!--Cover Area-->
 
@@ -35,7 +41,7 @@
                 <div id="friend-bar">
                     
                     <img src="../assets/img/selfie-test.jpg" class="profile-img"><br>
-                    Lucy Parker
+                    <?php echo $user_data['first_name'] . "<br> " . $user_data["last_name"]?>
 
                 </div>
             </div>

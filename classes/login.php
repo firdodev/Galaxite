@@ -29,17 +29,25 @@
         }
 
         public function check_login($id){
-            $query = "select userid from users where userid = '$id' limit 1 ";
+            if( is_numeric($id)){
 
-            $DB = new Database();
-            $result = $DB->read($query);
+                $query = "select * from users where userid = '$id' limit 1 ";
 
-            if($result){
-                return true;
+                $DB = new Database();
+                $result = $DB->read($query);
+
+                if($result){
+                    $user_data = $result[0];
+                    return $user_data;
+                }else{
+                    header("Location: ../index.php");
+                    die;
+                }
+
+            }else{
+                header("Location: ../index.php");
+                die;
             }
-
-            return false;
-
         }
     }
 

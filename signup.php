@@ -22,7 +22,7 @@
             echo "</div>";
         }else{
 
-            header("Location: login.php");
+            header("Location: index.php");
             die;
         }
         
@@ -67,21 +67,27 @@
             <center>
                 <form method="post" action="">
                     <input value = "<?php echo $first_name ?>" type="text" placeholder="First Name" class="email" name="first_name" id="first-name" required>
+                    <br>
                     <input value = "<?php echo $last_name ?>" type="text" placeholder="Last Name" class="email" name="last_name" id="last-name" required>
+                    <br>
                     <p>Gender:</p>
                     <select class="gender-select" name="gender" required>
                         <option><?php echo $gender ?></option>
                         <option>Male</option>
                         <option>Female</option>
                     </select>
+                    <br>
                     <input value = "<?php echo $email ?>" type="email" placeholder="Email" class="email" name="email" id="email" required>
+                    <br>
                     <input type="password" placeholder="Password" class="password" name="password" id="password" required>
+                    <br>
                     <input type="password" placeholder="Re-Password" class="password" name="re-password" id="re-password" required>
+                    <br>
                     <p style="color: red;" id="error-msg"></p>
                     <input type="submit" class="login" value="Create Account">
                     <!-- <button class="login" type="button">Create Account</button> -->
                 </form>
-                <a href="login.php" style="text-decoration: none;"><button class="create-acc">Login Account</button></a>
+                <a href="index.php" style="text-decoration: none;"><button class="create-acc">Login Account</button></a>
             </center>
         </div>
 </body>
